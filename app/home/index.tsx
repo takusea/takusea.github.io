@@ -47,7 +47,7 @@ const socials = [
 		color: "#000000",
 	},
 	{
-		href: "https://bsky.app/profile/takusea.com",
+		href: "https://github.com/takusea",
 		name: "GitHub",
 		icon: IconBrandGithub,
 		color: "#171515",
