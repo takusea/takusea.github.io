@@ -31,7 +31,6 @@ const WorkCard = (props: Props) => (
 				/>
 			))}
 		</div>
-		scm-history-item:d%3A%5CUsers%5Ctakusea%5CDocuments%5CGitHub%5Ctakusea.github.io?%7B%22repositoryId%22%3A%22scm0%22%2C%22historyItemId%22%3A%22501950004f771f6b48b116dcf4369821a6a45532%22%2C%22historyItemParentId%22%3A%22db9aceea524c775b66246319b0e431ee461320ad%22%2C%22historyItemDisplayId%22%3A%225019500%22%7D{" "}
 	</Card>
 );
 
