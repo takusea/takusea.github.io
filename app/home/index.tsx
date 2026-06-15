@@ -8,9 +8,9 @@ import {
 	IconNews,
 	IconPaperclip,
 } from "@tabler/icons-react";
+import AccountCard from "./AccountCard";
 import avatarImage from "./avatar.png";
 import logoImage from "./logo.png";
-import AccountCard from "./AccountCard";
 import WorkCard from "./WorkCard";
 
 export function Home() {
