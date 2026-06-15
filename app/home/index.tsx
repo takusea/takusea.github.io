@@ -10,21 +10,17 @@ import {
 } from "@tabler/icons-react";
 import AccountCard from "./AccountCard";
 import avatarImage from "./avatar.png";
-import logoImage from "./logo.png";
 import WorkCard from "./WorkCard";
 
 export function Home() {
 	return (
-		<main className="flex flex-col gap-4 px-4 py-8 max-w-screen-sm mx-auto min-h-screen">
+		<main className="flex flex-col gap-4 px-4 py-8 max-w-(--breakpoint-sm) mx-auto min-h-screen">
 			<div className="flex flex-col gap-2">
-				<h1 className="text-4xl font-bold">
-					<img
-						src={logoImage}
-						className="w-full"
-						style={{ imageRendering: "pixelated" }}
-						alt="たくしいのうぇぶさいと"
-					/>
-				</h1>
+				<h1
+					className="text-4xl w-full aspect-8/1 font-bold mask-[url(/logo.png)] mask-no-repeat mask-contain bg-black dark:bg-white"
+					aria-label="たくしいのうぇぶさいと"
+					style={{ imageRendering: "pixelated" }}
+				></h1>
 				<small className="block w-full text-right font-display">
 					©2025 takusea
 				</small>
