@@ -14,7 +14,10 @@ const WorkCard = (props: Props) => (
 		<h3 className="text-xl font-display leading-none">{props.title}</h3>
 		<div className="flex gap-2">
 			{props.tags.map((tag) => (
-				<div key={tag} className="text-xs font-display">
+				<div
+					key={tag}
+					className="text-xs font-display text-white dark:text-black bg-black dark:bg-white px-2 h-6 flex items-center"
+				>
 					{tag}
 				</div>
 			))}

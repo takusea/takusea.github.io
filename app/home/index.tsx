@@ -29,7 +29,7 @@ export function Home() {
 				<p>たくしいです。</p>
 				<p>お絵描き・動画投稿・プログラミング・ゲームなどをするひとです。</p>
 			</div>
-			<h2 className="text-2xl font-display leading-none mt-4">ACCOUNTS</h2>
+			<h2 className="text-2xl font-display leading-none mt-8">ACCOUNTS</h2>
 			<AccountCard
 				title="SNS"
 				description="XとBlueskyで大体同じポストを上げてます（クロスポスト）"
@@ -45,7 +45,7 @@ export function Home() {
 				description="イラストとか開発とか"
 				links={other}
 			/>
-			<h2 className="text-2xl font-display leading-none mt-4">WORKS</h2>
+			<h2 className="text-2xl font-display leading-none mt-8">WORKS</h2>
 			<WorkCard
 				title="BLOG"
 				tags={["Dev"]}
@@ -53,7 +53,7 @@ export function Home() {
 				links={blog}
 			/>
 			<WorkCard
-				title="MUST CLIPPER"
+				title="MUSTCLIPPER"
 				tags={["Dev"]}
 				description="YouTubeとTwitchの複数クリップをひとまとめにしてシェアするサイト"
 				links={mustClipper}
