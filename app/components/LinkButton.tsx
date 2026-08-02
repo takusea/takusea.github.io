@@ -11,7 +11,7 @@ const LinkButton = (props: Props) => (
 		href={props.href}
 		target="_blank"
 		rel="noopener noreferrer"
-		className="flex items-center gap-2 px-4 h-12 text-white font-display dark:border dark:before:text-white before:text-black before:content-['>'] before:absolute before:right-full before:opacity-0 hover:before:opacity-100 relative"
+		className="flex items-center gap-2 px-6 h-12 text-white font-display rounded-lg border-4 [border-image:url(/border-1-light.png)_2] dark:[border-image:url(/border-1-dark.png)_2] before:content-['>'] before:absolute before:left-1 before:opacity-0 hover:before:opacity-100 relative"
 		style={{ backgroundColor: props.color }}
 	>
 		{props.icon && (

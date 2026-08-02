@@ -23,7 +23,7 @@ const WorkCard = (props: Props) => (
 			))}
 		</div>
 		<p>{props.description}</p>
-		<div className="grid grid-cols-[repeat(auto-fill,minmax(min(200px,100%),1fr))] items-center gap-4">
+		<div className="grid grid-cols-[repeat(auto-fit,minmax(min(200px,100%),1fr))] items-center gap-4">
 			{props.links.map((link) => (
 				<LinkButton
 					key={link.href}
