@@ -1,13 +1,3 @@
-import {
-	IconBrandBluesky,
-	IconBrandGithub,
-	IconBrandX,
-	IconBrandYoutube,
-	IconDeviceTv,
-	IconLetterP,
-	IconNews,
-	IconPaperclip,
-} from "@tabler/icons-react";
 import AccountCard from "./AccountCard";
 import avatarImage from "./avatar.png";
 import WorkCard from "./WorkCard";
@@ -84,13 +74,13 @@ const sns = [
 	{
 		href: "https://x.com/takusea",
 		name: "X(Twitter)",
-		icon: IconBrandX,
+		icon: "icon_x.png",
 		color: "#000000",
 	},
 	{
 		href: "https://bsky.app/profile/takusea.com",
 		name: "Bluesky",
-		icon: IconBrandBluesky,
+		icon: "icon_bluesky.png",
 		color: "#006aff",
 	},
 ];
@@ -99,13 +89,13 @@ const video = [
 	{
 		href: "https://youtube.com/c/takusea",
 		name: "YouTube",
-		icon: IconBrandYoutube,
+		icon: "icon_youtube.png",
 		color: "#ff0033",
 	},
 	{
 		href: "https://nicovideo.jp/user/131128563",
 		name: "niconico",
-		icon: IconDeviceTv,
+		icon: "icon_niconico.png",
 		color: "#252525",
 	},
 ];
@@ -114,13 +104,13 @@ const other = [
 	{
 		href: "https://pixiv.net/users/81288254",
 		name: "Pixiv",
-		icon: IconLetterP,
+		icon: "icon_pixiv.png",
 		color: "#0096fa",
 	},
 	{
 		href: "https://github.com/takusea",
 		name: "GitHub",
-		icon: IconBrandGithub,
+		icon: "icon_github.png",
 		color: "#171515",
 	},
 ];
@@ -129,7 +119,7 @@ const blog = [
 	{
 		href: "https://blog.takusea.com",
 		name: "Blog",
-		icon: IconNews,
+		icon: "icon_blog.png",
 		color: "#000000",
 	},
 ];
@@ -138,7 +128,7 @@ const mustClipper = [
 	{
 		href: "https://mustclipper.takusea.com",
 		name: "Website",
-		icon: IconPaperclip,
+		icon: "icon_mustclipper.png",
 		color: "#000000",
 	},
 ];
@@ -147,7 +137,7 @@ const voicevox = [
 	{
 		href: "https://github.com/takusea/voicevox",
 		name: "Source",
-		icon: IconBrandGithub,
+		icon: "icon_github.png",
 		color: "#171515",
 	},
 ];
@@ -156,13 +146,13 @@ const animation = [
 	{
 		href: "https://youtube.com/playlist?list=PLgWIHb8dKRRAldYNfRbEh4mRXwsRwDmQ2",
 		name: "YouTube",
-		icon: IconBrandYoutube,
+		icon: "icon_youtube.png",
 		color: "#ff0033",
 	},
 	{
 		href: "https://nicovideo.jp/series/527537",
 		name: "niconico",
-		icon: IconDeviceTv,
+		icon: "icon_niconico.png",
 		color: "#252525",
 	},
 ];

@@ -1,9 +1,7 @@
-import type { Icon } from "@tabler/icons-react";
-
 type Props = {
 	href: string;
 	label: string;
-	icon?: Icon;
+	icon?: string;
 	color: string;
 };
 
@@ -16,7 +14,15 @@ const LinkButton = (props: Props) => (
 		className="flex items-center gap-2 px-4 h-12 text-white font-display border shadow"
 		style={{ backgroundColor: props.color }}
 	>
-		{props.icon && <props.icon />}
+		{props.icon && (
+			<img
+				src={props.icon}
+				alt={props.label}
+				width={32}
+				height={32}
+				style={{ imageRendering: "pixelated" }}
+			/>
+		)}
 		<span>{props.label}</span>
 	</a>
 );
