@@ -1,6 +1,6 @@
 export type Link = {
 	href: string;
 	name: string;
-	icon?: string;
+	icon?: ImageMetadata;
 	color: string;
 };

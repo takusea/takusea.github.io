@@ -1,6 +1,19 @@
 ---
-import { Home } from "../../app/home";
-import "../../app/app.css";
+import { Image } from "astro:assets";
+import avatarImage from "../assets/avatar.png";
+import logoImage from "../assets/logo.png";
+import AccountCard from "../components/home/AccountCard";
+import WorkCard from "../components/home/WorkCard";
+import {
+	animation,
+	blog,
+	mustClipper,
+	other,
+	sns,
+	video,
+	voicevox,
+} from "../data/links";
+import "../styles/global.css";
 
 const title = "たくしいのうぇぶさいと";
 const description =
@@ -13,6 +26,7 @@ const url = "https://takusea.com";
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{title}</title>
+    <link rel="icon" href="/favicon.png" type="image/png">
 		<link rel="canonical" href={url} />
 		<meta name="description" content={description} />
 		<meta property="og:title" content={title} />
@@ -28,7 +42,74 @@ const url = "https://takusea.com";
 			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
 		/>
 	</head>
-	<body class="dark:text-white dark:bg-black">
-		<Home client:load />
+	<body class="dark:text-white dark:bg-black  px-4 py-8 mx-auto max-w-(--breakpoint-sm) min-h-screen">
+		<header class="flex flex-col gap-1">
+			<h1
+			class="text-4xl w-full aspect-8/1 font-bold bg-black dark:bg-white"
+			aria-label={title}
+			style={{
+				imageRendering: "pixelated",
+				maskImage: `url(${logoImage.src})`,
+						maskRepeat: "no-repeat",
+						maskSize: "contain",
+						WebkitMaskImage: `url(${logoImage.src})`,
+						WebkitMaskRepeat: "no-repeat",
+						WebkitMaskSize: "contain",
+					}}
+				></h1>
+				<small class="block w-full text-right font-display">©2025 takusea</small>
+			<p>たくしいです。</p>
+			<p>お絵描き・動画投稿・プログラミング・ゲームなどをするひとです。</p>
+		</header>
+		<main class="flex flex-col gap-4">
+			<h2 class="text-2xl font-display leading-none mt-8">ACCOUNTS</h2>
+			<AccountCard
+				title="SNS"
+				description="XとBlueskyで大体同じポストを上げてます（クロスポスト）"
+				links={sns}
+			/>
+			<AccountCard
+				title="VIDEO"
+				description="YouTubeとニコニコで大体同じ動画を上げてます"
+				links={video}
+			/>
+			<AccountCard
+				title="OTHER"
+				description="イラストとか開発とか"
+				links={other}
+			/>
+			<h2 class="text-2xl font-display leading-none mt-8">WORKS</h2>
+			<WorkCard
+				title="BLOG"
+				tags={["Dev"]}
+				description="備忘録や雑記用のブログサイトづくり"
+				links={blog}
+			/>
+			<WorkCard
+				title="MUSTCLIPPER"
+				tags={["Dev"]}
+				description="YouTubeとTwitchの複数クリップをひとまとめにしてシェアするサイト"
+				links={mustClipper}
+			/>
+			<WorkCard
+				title="VOICEVOX"
+				tags={["Dev"]}
+				description="VOICEVOX開発（主にデザイン）のコントリビュート"
+				links={voicevox}
+			/>
+			<WorkCard
+				title="ANIMATION"
+				tags={["Video"]}
+				description="ボイボ手書き劇場の制作"
+				links={animation}
+			/>
+			<Image
+				src={avatarImage}
+				class="fixed bottom-0 right-0 h-96 w-auto -z-10"
+				style={{ imageRendering: "pixelated" }}
+				alt=""
+				format="png"
+			/>
+		</main>
 	</body>
 </html>
