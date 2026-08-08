@@ -1,0 +1,34 @@
+---
+import { Home } from "../../app/home";
+import "../../app/app.css";
+
+const title = "たくしいのうぇぶさいと";
+const description =
+	"たくしいです。お絵描き・動画投稿・プログラミング・ゲームなどをするひとです。";
+const url = "https://takusea.com";
+---
+
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{title}</title>
+		<link rel="canonical" href={url} />
+		<meta name="description" content={description} />
+		<meta property="og:title" content={title} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={url} />
+		<meta property="og:site_name" content={title} />
+		<meta property="og:description" content={description} />
+		<meta name="twitter:site" content="@takusea" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+		/>
+	</head>
+	<body class="dark:text-white dark:bg-black">
+		<Home client:load />
+	</body>
+</html>
