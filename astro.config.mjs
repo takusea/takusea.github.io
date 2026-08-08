@@ -1,7 +1,7 @@
 import { fileURLToPath, URL } from "node:url";
 import react from "@astrojs/react";
 import tailwindcss from "@tailwindcss/vite";
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 
 export default defineConfig({
 	integrations: [react()],
@@ -13,4 +13,11 @@ export default defineConfig({
 			},
 		},
 	},
+	fonts: [
+		{
+			provider: fontProviders.google(),
+			name: "Press Start 2P",
+			cssVariable: "--font-display",
+		},
+	],
 });

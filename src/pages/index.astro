@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Font, Image } from "astro:assets";
 import avatarImage from "../assets/avatar.png";
 import logoImage from "../assets/logo.png";
 import AccountCard from "../components/home/AccountCard";
@@ -35,12 +35,7 @@ const url = "https://takusea.com";
 		<meta property="og:site_name" content={title} />
 		<meta property="og:description" content={description} />
 		<meta name="twitter:site" content="@takusea" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-		/>
+		<Font cssVariable="--font-display" preload />
 	</head>
 	<body class="dark:text-white dark:bg-black  px-4 py-8 mx-auto max-w-(--breakpoint-sm) min-h-screen">
 		<header class="flex flex-col gap-1">

@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-@theme {
+@theme inline {
 	--font-sans:
 		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
 		"Noto Color Emoji";
-	--font-display: "Press Start 2P";
+	--font-display: var(--font-display);
 }
