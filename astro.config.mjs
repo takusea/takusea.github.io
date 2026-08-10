@@ -1,4 +1,3 @@
-import { fileURLToPath, URL } from "node:url";
 import react from "@astrojs/react";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig, fontProviders } from "astro/config";
@@ -8,9 +7,7 @@ export default defineConfig({
 	vite: {
 		plugins: [tailwindcss()],
 		resolve: {
-			alias: {
-				"~": fileURLToPath(new URL("./app", import.meta.url)),
-			},
+			tsconfigPaths: true,
 		},
 	},
 	fonts: [
