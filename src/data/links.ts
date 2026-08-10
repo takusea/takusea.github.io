@@ -1,12 +1,12 @@
-import iconBlog from "../assets/icon_blog.png";
-import iconBluesky from "../assets/icon_bluesky.png";
-import iconGithub from "../assets/icon_github.png";
-import iconMustclipper from "../assets/icon_mustclipper.png";
-import iconNiconico from "../assets/icon_niconico.png";
-import iconPixiv from "../assets/icon_pixiv.png";
-import iconX from "../assets/icon_x.png";
-import iconYoutube from "../assets/icon_youtube.png";
-import type { Link } from "../types/link";
+import iconBlog from "@/assets/icon_blog.png";
+import iconBluesky from "@/assets/icon_bluesky.png";
+import iconGithub from "@/assets/icon_github.png";
+import iconMustclipper from "@/assets/icon_mustclipper.png";
+import iconNiconico from "@/assets/icon_niconico.png";
+import iconPixiv from "@/assets/icon_pixiv.png";
+import iconX from "@/assets/icon_x.png";
+import iconYoutube from "@/assets/icon_youtube.png";
+import type { Link } from "@/types/link";
 
 export const sns: Link[] = [
 	{

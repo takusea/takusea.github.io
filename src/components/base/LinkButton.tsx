@@ -1,5 +1,5 @@
 import type { ImageMetadata } from "astro";
-import borderImage from "../../assets/border_button.png";
+import borderImage from "@/assets/border_button.png";
 
 type Props = {
 	href: string;

@@ -1,6 +1,6 @@
-import type { Link } from "../../types/link";
-import Card from "../base/Card";
-import LinkButton from "../base/LinkButton";
+import Card from "@/components/base/Card";
+import LinkButton from "@/components/base/LinkButton";
+import type { Link } from "@/types/link";
 
 type Props = {
 	title: string;

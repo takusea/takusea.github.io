@@ -1,5 +1,5 @@
 import type { JSX } from "react";
-import borderImage from "../../assets/border_card.png";
+import borderImage from "@/assets/border_card.png";
 
 type Props = {
 	children: JSX.Element[];
