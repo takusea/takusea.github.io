@@ -7,9 +7,10 @@
 		"start": "astro dev",
 		"build": "astro build",
 		"preview": "astro preview",
-		"check": "biome check .",
-		"fix": "biome check . --write",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"lint:check": "biome check .",
+		"lint:fix": "biome check . --write",
+		"lint:ci": "biome ci"
 	},
 	"dependencies": {
 		"@astrojs/react": "^6.0.2",
