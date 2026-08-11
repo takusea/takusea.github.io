@@ -10,14 +10,13 @@ type Props = {
 
 const LinkButton = (props: Props) => (
 	<a
-		key={props.href}
 		href={props.href}
 		target="_blank"
 		rel="noopener noreferrer"
-		className="flex items-center gap-2 px-6 h-12 text-white font-display rounded-lg border-8 before:content-['>'] before:absolute before:left-1 before:opacity-0 hover:before:opacity-100 relative"
+		class="flex items-center gap-2 px-6 h-12 text-white font-display rounded-lg border-8 before:content-['>'] before:absolute before:left-1 before:opacity-0 hover:before:opacity-100 relative"
 		style={{
-			backgroundColor: props.color,
-			borderImage: `url(${borderImage.src}) 4`,
+			"background-color": props.color,
+			"border-image": `url(${borderImage.src}) 4`,
 		}}
 	>
 		{props.icon && (
@@ -26,7 +25,7 @@ const LinkButton = (props: Props) => (
 				alt=""
 				width={32}
 				height={32}
-				style={{ imageRendering: "pixelated" }}
+				style={{ "image-rendering": "pixelated" }}
 			/>
 		)}
 		<span>{props.label}</span>

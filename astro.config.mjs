@@ -1,9 +1,9 @@
-import react from "@astrojs/react";
+import solidJs from "@astrojs/solid-js";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig, fontProviders } from "astro/config";
 
 export default defineConfig({
-	integrations: [react()],
+	integrations: [solidJs()],
 	vite: {
 		plugins: [tailwindcss()],
 		resolve: {

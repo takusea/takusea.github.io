@@ -11,22 +11,18 @@ type Props = {
 
 const WorkCard = (props: Props) => (
 	<Card>
-		<h3 className="text-xl font-display leading-none">{props.title}</h3>
-		<div className="flex gap-2">
+		<h3 class="text-xl font-display leading-none">{props.title}</h3>
+		<div class="flex gap-2">
 			{props.tags.map((tag) => (
-				<div
-					key={tag}
-					className="text-xs font-display text-white dark:text-black bg-black dark:bg-white px-2 h-6 flex items-center"
-				>
+				<div class="text-xs font-display text-white dark:text-black bg-black dark:bg-white px-2 h-6 flex items-center">
 					{tag}
 				</div>
 			))}
 		</div>
 		<p>{props.description}</p>
-		<div className="grid grid-cols-[repeat(auto-fit,minmax(min(200px,100%),1fr))] items-center gap-4">
+		<div class="grid grid-cols-[repeat(auto-fit,minmax(min(200px,100%),1fr))] items-center gap-4">
 			{props.links.map((link) => (
 				<LinkButton
-					key={link.href}
 					href={link.href}
 					icon={link.icon}
 					color={link.color}
